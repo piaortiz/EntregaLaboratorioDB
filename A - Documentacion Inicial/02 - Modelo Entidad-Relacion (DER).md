@@ -272,7 +272,7 @@ erDiagram
 ### Módulo 6 — Auditoría
 | Tabla | Función | Cardinalidad clave |
 |-------|-----|--------------------|
-| *(Tabla AUDITORIA eliminada v1.0 — la auditoría se maneja con AUDITORIAS_SIMPLES, creada por Bundle E1)* | | |
+| `AUDITORIAS_SIMPLES` | Log simplificado de INSERT/UPDATE/DELETE sobre las entidades principales | — (sin FK, registro independiente) |
 
 ### Módulo 7 — Reportes
 | Tabla | Función | Cardinalidad clave |

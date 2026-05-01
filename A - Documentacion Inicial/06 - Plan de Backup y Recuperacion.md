@@ -144,6 +144,30 @@ Si no reporta errores, la base está lista para usar.
 
 ---
 
+## BACKUP INCLUIDO EN ESTA ENTREGA
+
+Como parte de la entrega parcial se incluye un backup real de EsbirrosDB generado con SQLBackupAndFTP el **1 de mayo de 2026 a las 18:47 hs**.
+
+| Campo | Detalle |
+|---|---|
+| **Archivo** | `C - Backups/EsbirrosDB202605011847.zip` |
+| **Tipo** | Full Backup |
+| **Contenido** | Archivo `.bak` de EsbirrosDB lista para restaurar |
+| **Generado con** | SQLBackupAndFTP Free v12.7.35 |
+| **Servidor origen** | Entorno local de desarrollo |
+
+**Para restaurar:**
+1. Descomprimir `EsbirrosDB202605011847.zip`
+2. Copiar el `.bak` a una ruta accesible por SQL Server
+3. Ejecutar desde SSMS o sqlcmd:
+```sql
+RESTORE DATABASE EsbirrosDB 
+FROM DISK = 'C:\ruta\al\archivo.bak'
+WITH REPLACE, RECOVERY;
+```
+
+---
+
 **Desarrollado por:** SQLeaders S.A.  
 Materia: Laboratorio de Administración de Bases de Datos | Profesor: Carlos Alejandro Caraccio  
 Uso exclusivamente académico — Prohibida la comercialización  

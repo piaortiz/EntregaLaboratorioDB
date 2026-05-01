@@ -55,6 +55,15 @@ Scripts de despliegue organizados en orden de ejecución.
 | `07_Carga_Masiva_Datos` | INSERT masivo de datos de prueba (~96.000 registros) |
 | `08_BulkInsert_Clientes_Domicilios` | BULK INSERT + script Python + CSV (10.000 clientes) |
 
+### `C - Backups/`
+Backup real de EsbirrosDB generado con SQLBackupAndFTP.
+
+| Archivo | Descripción |
+|---|---|
+| `EsbirrosDB202605011847.zip` | Backup completo (FULL) de EsbirrosDB — 1 de mayo de 2026, 18:47 hs. Contiene el archivo `.bak` listo para restaurar en SQL Server. |
+
+> Para restaurar: descomprimir el `.zip` y ejecutar `RESTORE DATABASE EsbirrosDB FROM DISK = 'ruta\EsbirrosDB.bak'` desde SSMS o sqlcmd. Ver `A - Documentacion Inicial/06 - Plan de Backup y Recuperacion.md` para el procedimiento completo.
+
 ---
 
 ## Orden de Ejecución

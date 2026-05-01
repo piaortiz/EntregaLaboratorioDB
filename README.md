@@ -38,6 +38,7 @@ Documentación técnica y académica del proyecto.
 | 05 | Carga Masiva de Datos | Descripción de Bundle F (~96.000 registros) y Bundle H (BULK INSERT 10.000 clientes) |
 | 06 | Plan de Backup y Recuperación | Estrategia de backup implementada con SQLBackupAndFTP |
 | 07 | Prompts de IA Utilizados | Registro de uso de GitHub Copilot (Claude Sonnet 4.6) durante el proyecto |
+| 08 | Informe de Despliegue AWS | Implementación de EsbirrosDB en Amazon RDS — SQL Server 2019 Express |
 
 ### `B - Scripts SQL/`
 Scripts de despliegue organizados en orden de ejecución.
